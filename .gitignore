@@ -1,0 +1,32 @@
+# Results directories
+results/
+output*/
+procsim.dSYM/
+
+# Trace files
+*.trace
+traces/
+
+# Log files
+*.log
+
+# Diff files
+*.diff
+
+# Object files and executables
+*.o
+procsim
+
+# OS specific files
+.DS_Store
+*~
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp 
