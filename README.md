@@ -51,7 +51,10 @@ A detailed processor simulator that models a superscalar out-of-order processor 
 - `-k`: Schedule queue size
 - `-l`: ROB size
 - `-f`: Fetch width
-- `-o`: Enable output
+- `-v`: Enable Logging
+- `-d`: Enable Debug
+- `-o`: Enable Output
+
 
 ## Traces
 
@@ -91,7 +94,7 @@ results/
 make
 ```
 
-2. Run all traces with default configuration:
+2. Run all traces with default configuration and check against golden:
 ```bash
 ./run_all.sh
 ```
@@ -103,7 +106,7 @@ make
 
 4. Run a specific trace:
 ```bash
-./procsim -o -r2 -f4 -j3 -k2 -l1 < traces/gcc.100k.trace > results/gcc.output
+./procsim -r2 -f4 -j3 -k2 -l1 < traces/gcc.100k.trace > results/gcc.output
 ```
 
 ## Dependencies
