@@ -1,6 +1,7 @@
 # Processor Simulator
 
-A detailed processor simulator that models a superscalar out-of-order processor with various functional units and pipeline stages.
+A detailed processor simulator that models the backend of a superscalar out-of-order processor with various functional units.
+Computer Assignment Report can be found at CA2-Report.pdf
 
 ## Project Structure
 
