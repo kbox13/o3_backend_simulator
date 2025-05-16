@@ -30,3 +30,7 @@ procsim
 # Temporary files
 *.tmp
 *.temp 
+
+# outputs
+*.output
+*.debug
