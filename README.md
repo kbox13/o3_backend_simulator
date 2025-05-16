@@ -28,10 +28,10 @@ Computer Assignment Report can be found at CA2-Report.pdf
 2. `run_experiment.sh`
    - Tests multiple parameter configurations
    - Parameter ranges:
-     - R: 2, 4, 8 (number of functional units)
-     - J: 1, 2, 3 (dispatch width)
-     - K: 1, 2, 3 (schedule queue size)
-     - L: 1, 2, 3 (ROB size)
+     - R: 2, 4, 8 (Result Busses)
+     - J: 1, 2, 3 (k0)
+     - K: 1, 2, 3 (k1)
+     - L: 1, 2, 3 (k2)
      - F: 2, 4, 8 (fetch width)
    - Organizes results in two ways:
      - By configuration: `results/experiments/R2_J3_K2_L1_F4/`
@@ -41,17 +41,21 @@ Computer Assignment Report can be found at CA2-Report.pdf
 ### Build System
 
 - `Makefile`: Build configuration
-  - Build: `make`
+  - Build: `make build`
   - Clean: `make clean`
-  - Run specific trace: `make run TRACE=<trace_name>`
+  - Run: `make run`
+  - Run Debug: `make run-debug`
+  - Run Log: `make run-log`
+  - Run Output: `make run-output`
+  - Run a specific trace `make run TRACE=<trace_name>`
 
 ## Configuration Parameters
 
-- `-r`: Number of functional units
-- `-j`: Dispatch width
-- `-k`: Schedule queue size
-- `-l`: ROB size
-- `-f`: Fetch width
+- `-r`: Number of Result Busses
+- `-j`: Number of k0 Functional Units
+- `-k`: Number of k1 Functional Units
+- `-l`: Number of k2 Functional Units
+- `-f`: Fetch Width
 - `-v`: Enable Logging
 - `-d`: Enable Debug
 - `-o`: Enable Output
